@@ -41,14 +41,13 @@ public class SpielerBewegung : MonoBehaviour
         {
             rb.AddForce(Vector2.right * Geschwindigkeit, ForceMode2D.Impulse);
         }
-
-
+        if (Input.GetKey("left"))
         {
             rb.AddForce(Vector2.left * Geschwindigkeit, ForceMode2D.Impulse);
         }
-
-        //if (HorizontaleBewegung>0.1f || HorizontaleBewegung <-0.1f){
-        //    rb.AddForce(new Vector2(HorizontaleBewegung*Geschwindigkeit, 0f), ForceMode2D.Impulse);
+        //if (HorizontaleBewegung > 0.1f || HorizontaleBewegung < -0.1f)
+        //{
+        //    rb.AddForce(new Vector2(HorizontaleBewegung * Geschwindigkeit, 0f), ForceMode2D.Impulse);
         //}
 
 
